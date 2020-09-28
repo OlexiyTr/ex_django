@@ -5,6 +5,7 @@ from main.views import ProfilePage, RegisterView
 
 
 urlpatterns = [
+    path('test'),
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
     path('accounts/login/', LoginView.as_view(), name="login"),
